@@ -45,7 +45,7 @@ fn day17() {
                 a = a >> com(opd, a, b, c);
             }
             1 => {
-                b = b ^ opd;
+                b ^= opd;
             }
             2 => {
                 b = com(opd, a, b, c) % 8;
@@ -57,7 +57,7 @@ fn day17() {
                 }
             }
             4 => {
-                b = b ^ c;
+                b ^= c;
             }
             5 => {
                 out.push(com(opd, a, b, c) % 8);
